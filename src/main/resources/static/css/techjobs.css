@@ -1,5 +1,5 @@
 .body-content {
-    margin-top: 72px;
+    margin-top: 50px;
 }
 
 td, th {
@@ -11,7 +11,7 @@ th {
 }
 
 td {
-    vertical-align: top;
+    display: table-cell;
 }
 
 tr:nth-child(odd) {
@@ -24,8 +24,6 @@ tr:nth-child(odd) {
 }
 
 table.job-listing {
-    margin: 30px auto;
-    border: 1px solid #e4e4e4;
     width: 80%;
 }
 
@@ -43,4 +41,8 @@ label {
 
 .centered {
     text-align: center;
+}
+
+* {
+    box-sizing: border-box;
 }
