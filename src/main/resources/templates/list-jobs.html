@@ -12,6 +12,21 @@
 
     <!-- TODO #1 - Use a loop to display job results in a table. -->
 
+    <table class="job-listing">
+        <th:block th:each="job : ${jobs}">
+            <tr>
+                <td>
+                    <div th:text="${'ID: ' + job.getId()}"></div>
+                    <div th:text="${'Name: ' + job.name}"></div>
+                    <div th:text="${'Employer: ' + job.employer}"></div>
+                    <div th:text="${'Location: ' + job.location}"></div>
+                    <div th:text="${'Position Type: ' + job.positionType}"></div>
+                    <div th:text="${'Core Competency: ' + job.coreCompetency}"></div>
+                </td>
+            </tr>
+        </th:block>
+    </table>
+
 </div>
 
 </body>
